@@ -22,7 +22,17 @@ public class Bank {
 			Password = scn.nextLine();		
 			if(cust.login(Username,Password)) {
 				System.out.println("login Sucessfull");
-				
+				System.out.println();
+
+				Account acc = new Account();
+				acc.display();
+                    System.out.println();
+				Current cur = new Current();
+				cur.display();
+                    System.out.println();
+				Saving sv = new Saving();
+				sv.display();
+				System.out.println();
 				int ch = 1;
 				while(ch == 1) {
 					

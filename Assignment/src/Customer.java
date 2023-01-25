@@ -11,6 +11,8 @@ public class Customer {
 	public long phone;
 	public float Balance;
 	public int age;
+
+	Scanner scn = new Scanner(System.in);
 	
 	public Customer(String name,String Username,String Password,String SSn,String Address,String email,long phone,int age) {
 		this.name = name;
@@ -60,34 +62,34 @@ public class Customer {
 		System.out.println("6. change age");
 		
 		int choice;
-		Scanner scn = new Scanner(System.in);
+		
 		choice = scn.nextInt();
 		switch(choice) {
 		
 		case 1:
 			System.out.println("enter new name");
-			String newName = scn.nextLine();
+			String newName = scn.next();
 			this.name = newName;
-			System.out.println("name updated ");
+			System.out.println("name updated " + this.name);
 			break;
 			
 		case 2:
 			System.out.println("enter new username");
-			String newUsername = scn.nextLine();
+			String newUsername = scn.next();
 			this.Username = newUsername;
 			System.out.println("Username updated ");
 			break;
 			
 		case 3:
 			System.out.println("enter new address");
-			String newAddress = scn.nextLine();
+			String newAddress = scn.next();
 			this.Address = newAddress;
 			System.out.println("address updated ");
 			break;
 			
 		case 4:
 			System.out.println("enter new email");
-			String newEmail = scn.nextLine();
+			String newEmail = scn.next();
 			this.Email = newEmail;
 			System.out.println("Email updated ");
 			break;
@@ -113,7 +115,6 @@ public class Customer {
 	
 	}
 	public void changePassword() {
-		Scanner scn = new Scanner(System.in);
 		
 		System.out.println("Enter current Password");
 		String pass = scn.nextLine();
