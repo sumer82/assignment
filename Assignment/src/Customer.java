@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Customer {
+public class Customer  implements Validation{
 	
 	public String name;
 	public String Username;
@@ -132,6 +132,27 @@ public class Customer {
 			}
 		}
 		System.out.println("password incorrect");
+	}
+	
+	public void validateSsn() {
+		if(this.SSn.length() == 9) {
+			System.out.println("SSN validated sucessfully");
+		}
+		else
+		{
+			System.out.println("please check the length of SSn");
+		}
+		
+	}
+
+	public void validateAge() {
+		if(this.age >18) {
+			System.out.println("valid age can open account");
+		}
+		else
+		{
+			System.out.println("sorry not eligible for opening a bank account");
+		}
 	}
 
 }
