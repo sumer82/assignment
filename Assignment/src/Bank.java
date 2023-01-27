@@ -23,6 +23,11 @@ public class Bank {
 			if(cust.login(Username,Password)) {
 				System.out.println("login Sucessfull");
 				System.out.println();
+				
+				cust.validateAge();
+				
+				cust.validateSsn();
+				
 
 				Account acc = new Account();
 				acc.display();
