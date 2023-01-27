@@ -28,16 +28,16 @@ public class Bank {
 				
 				cust.validateSsn();
 				
-
-				Account acc = new Account();
+					
+				Account acc = new Current();
 				acc.display();
-                    System.out.println();
-				Current cur = new Current();
-				cur.display();
-                    System.out.println();
-				Saving sv = new Saving();
-				sv.display();
-				System.out.println();
+                                System.out.println();
+                
+            	                Account acc2 = new saving();
+				acc2.display();
+                                System.out.println();
+
+				
 				int ch = 1;
 				while(ch == 1) {
 					
