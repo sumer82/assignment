@@ -25,7 +25,9 @@ added acount class /and override display method
 abstract class and methods 
 
 ![image](https://user-images.githubusercontent.com/91982125/215045090-08b49066-4ce8-4745-89a5-16c84a586f8a.png)
+
 output
+
 ![image](https://user-images.githubusercontent.com/91982125/215045412-e2bd6d77-1455-4cf8-be07-d3ae9355b42a.png)
 
 
@@ -36,6 +38,7 @@ interface implementation
 ![image](https://user-images.githubusercontent.com/91982125/215045216-72e10be6-583a-46d2-a4b3-67aff6a06c92.png)
 
 output
+
 ![image](https://user-images.githubusercontent.com/91982125/215045313-fba707d3-0735-4696-a9ec-0eff764d56dc.png)
 
 
